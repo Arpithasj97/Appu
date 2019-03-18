@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Blocks</title>
+	<script src = "C:\Users\Arpitha\Desktop\examples\javascript\jquery\jquery-3.3.1.min.js"/></script>
+	<style>
+		div{
+			border:solid;
+			width:100px;
+			height:100px;
+			display:inline-block;
+			padding:25px;
+			box-sizing:border-box;
+			margin-right:20px;
+			position:relative;
+		}
+	</style>
+</head>
+<body>
+
+		<div style="background-color:yellow; text-align:center;"></div>
+		
+			
+<script>
+	$(document).ready(function(){
+			$("div").click(function(){
+			$(this).animate({"position":"relative","left":"300px","width":"150px","height":"150px"},1000);
+			$(this).animate({"position":"relative","top":"300px","width":"150px","height":"150px"},1000);
+			$(this).animate({"position":"relative","left":"0px","width":"160px","height":"160px"},1000);
+			$(this).animate({"position":"relative","top":"0px","width":"180px","height":"180px"},1000);
+			});
+			
+});
+</script>
+
+</body>
+</html>
